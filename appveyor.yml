@@ -9,8 +9,6 @@ image: Visual Studio 2019
 init:
 - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
-build: off
-
 build_script:
   - cmd: buildV6 1272 %APPVEYOR_BUILD_NUMBER%
   - cmd: buildV6 1311 %APPVEYOR_BUILD_NUMBER%
