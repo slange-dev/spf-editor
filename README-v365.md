@@ -36,7 +36,7 @@ Currently there are two installers for SPF/SE 365 available.
 The [SPF/SE 365 Build 3454 installer](../../releases/tag/v365.3454.38) installs the last version of SPF/SE 365 ever released. 
 The [SPF/SE 365 Build 3448 installer](../../releases/tag/v365.3448.38) installs build 3448 of SPF/SE 365.
 
-Some users reported that build 3545 has issues with carriage return / line feed on some source code files. For this reason build 3448 is also provided, which does not have this issues.
+Some users reported that build 3454 has issues with carriage return / line feed on some source code files. For this reason build 3448 is also provided, which does not have this issues.
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 365** if you install SPF/SE 365 for all users.
