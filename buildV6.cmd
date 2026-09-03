@@ -60,3 +60,8 @@ mkdir orig-profiles
 
 rem Building the installer using InnoSetup
 "C:\Program Files (x86)\Inno Setup 6\iscc.exe" spfse-60-%1.iss /DAppveyorBuildNumber=%2
+
+if %ERRORLEVEL% neq 0 (
+    echo Building installer failed, returncode : %ERRORLEVEL%
+    exit /b %ERRORLEVEL%
+)
