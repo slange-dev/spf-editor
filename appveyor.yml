@@ -13,6 +13,8 @@ build_script:
 
     buildV7 1723 %APPVEYOR_BUILD_NUMBER%
 
+    buildV365 3448 %APPVEYOR_BUILD_NUMBER%
+
     buildV365 3454 %APPVEYOR_BUILD_NUMBER%
 artifacts:
 - path: '*.exe'
