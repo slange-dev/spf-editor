@@ -7,14 +7,15 @@ branches:
 image: Visual Studio 2019
 
 init:
+- cmd: echo === Running used checked in appveyor.yml file ===
 - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 build_script:
-  - cmd: buildV6 1272 %APPVEYOR_BUILD_NUMBER%
-  - cmd: buildV6 1311 %APPVEYOR_BUILD_NUMBER%
-  - cmd: buildV7 1723 %APPVEYOR_BUILD_NUMBER%
-  - cmd: buildV365 3448 %APPVEYOR_BUILD_NUMBER%
-  - cmd: buildV365 3454 %APPVEYOR_BUILD_NUMBER%
+- cmd: buildV6 1272 %APPVEYOR_BUILD_NUMBER%
+- cmd: buildV6 1311 %APPVEYOR_BUILD_NUMBER%
+- cmd: buildV7 1723 %APPVEYOR_BUILD_NUMBER%
+- cmd: buildV365 3448 %APPVEYOR_BUILD_NUMBER%
+- cmd: buildV365 3454 %APPVEYOR_BUILD_NUMBER%
   
 artifacts:
 - path: '*.exe'
