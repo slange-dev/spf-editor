@@ -6,7 +6,7 @@ For this reason I also provide an installer for SPF/SE 365.
 ## Product key
 To make the SPF/SE 365 release a full working release, you need a product key. As we've got the permission to distribute SPF/SE for free, we can also make a valid product key available. You can use the product key **i8ds-qj8g-3h7o-7cvr-d39a-iang-hwje**.
 
-Two releases of SPF/SE 365 are available in the [binaries](../main/binaries) directory. [SPF/SE 365 Build 3163](../../raw/main/binaries/SPFSE365-3163.msi) requires a product key, the latest version [SPF/SE 365 Build 3454](../../raw/main/binaries/SPFSE365-3454.msi) will work without a product key.
+Three releases of SPF/SE 365 are available in the [binaries](../main/binaries) directory. [SPF/SE 365 Build 3163](../../raw/main/binaries/SPFSE365-3163.msi) requires a product key, [SPF/SE 365 Build 3448](../../raw/main/binaries/SPFSE365-3448.msi) as well as the latest version [SPF/SE 365 Build 3454](../../raw/main/binaries/SPFSE365-3454.msi) will work without a product key.
 
 ## Installer
 The original version comes as an MSI package that was very limited in its usage.
@@ -22,7 +22,7 @@ A desktop icon can be created by enabling the task *desktopicon* and the include
 A silent installation for all users that also creates a desktop icon and installs the fonts can be invoked with
 
 ```
-SPFSE-365.3454.25-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
+SPFSE-365.3454.38-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
 ```
 
 If you want to install SPF/SE 365 just for the current user and not for all users, replace */ALLUSERS* with */CURRENTUSER*.
@@ -31,9 +31,12 @@ There are more parameters avaiable (i. e. for creating a log file).
 As mentioned, please see the [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
 
 ### Provided SPF/SE 356 installers
-Currently there is just one installer for SPF/SE 365 available.
+Currently there are two installers for SPF/SE 365 available.
 
-The [SPF/SE 365 Build 3454 installer](../../releases/tag/v365.3454.25) installs the last version of SPF/SE 365 ever released. 
+The [SPF/SE 365 Build 3454 installer](../../releases/tag/v365.3454.38) installs the last version of SPF/SE 365 ever released. 
+The [SPF/SE 365 Build 3448 installer](../../releases/tag/v365.3448.38) installs build 3448 of SPF/SE 365.
+
+Some users reported that build 3545 has issues with carriage return / line feed on some source code files. For this reason build 3448 is also provided, which does not have this issues.
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 365** if you install SPF/SE 365 for all users.
